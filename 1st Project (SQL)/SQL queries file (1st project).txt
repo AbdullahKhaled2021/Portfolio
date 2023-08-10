@@ -1,0 +1,100 @@
+/* Question 1: */
+
+SELECT
+  f.title AS Film_title,
+  c.name AS Category_name,
+  COUNT(r.rental_id) AS rental_count
+FROM film f
+JOIN film_category fc
+  ON fc.film_id = f.film_id
+JOIN category c
+  ON c.category_id = fc.category_id
+JOIN inventory i
+  ON i.film_id = f.film_id
+JOIN rental r
+  ON r.inventory_id = i.inventory_id
+GROUP BY 1,
+         2
+HAVING c.name IN ('Family', 'Animation', 'Children', 'Classics', 'Comedy', 'Music')
+ORDER BY 3 DESC;
+
+
+
+/* Question 2: */
+
+
+
+WITH t1
+AS (SELECT
+  f.title AS Film_title,
+  c.name AS Category_name,
+  f.rental_duration AS rental_duration,
+  NTILE(4) OVER (ORDER BY f.rental_duration) AS rental_duration_percentile
+FROM film f
+JOIN film_category AS fc
+  ON fc.film_id = f.film_id
+JOIN category AS c
+  ON c.category_id = fc.category_id
+ORDER BY 4)
+
+SELECT
+  *
+FROM t1
+WHERE t1.category_name IN ('Family', 'Animation', 'Children', 'Classics', 'Comedy', 'Music');
+
+
+
+
+/* Question 3: */
+
+
+
+WITH t1
+AS (SELECT
+  f.title AS Film_title,
+  c.name AS Category_name,
+  f.rental_duration AS rental_duration,
+  NTILE(4) OVER (ORDER BY f.rental_duration) AS rental_lentgh_category
+FROM film f
+JOIN film_category AS fc
+  ON fc.film_id = f.film_id
+JOIN category AS c
+  ON c.category_id = fc.category_id
+WHERE c.name IN ('Family', 'Animation', 'Children', 'Classics', 'Comedy', 'Music')
+ORDER BY 4)
+
+SELECT
+  t1.category_name,
+  t1.rental_lentgh_category,
+  COUNT(t1.rental_duration)
+FROM t1
+GROUP BY 1,
+         2
+ORDER BY 1, 2;
+
+
+
+/* Question 4: */
+
+
+
+WITH t1
+AS (SELECT
+  s2.store_id AS store_id,
+  DATE_PART('year', r.rental_date) AS order_year,
+  DATE_PART('month', r.rental_date) AS order_month,
+  COUNT(*) AS orders_count
+FROM staff s1
+JOIN store s2
+  ON s1.store_id = s2.store_id
+JOIN rental r
+  ON r.staff_id = s1.staff_id
+GROUP BY 1,
+         2,
+         3)
+
+SELECT
+  t1.store_id AS store_id,
+  CONCAT(t1.order_year, '-', t1.order_month) AS order_date,
+  t1.orders_count AS orders_count
+FROM t1;
