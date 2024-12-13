@@ -1,6 +1,6 @@
 # Abstract 
 
-* The following projects were made as a part of **Udacity Programming for Data Science with python Nanodegree** program.
+* The following projects were made as a part of my digital learing joureny.
 
 ## First Project
 
