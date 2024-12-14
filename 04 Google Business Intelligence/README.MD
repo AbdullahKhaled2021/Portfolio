@@ -1,7 +1,8 @@
 ### Projcet Title
 Managing a BI project for Cyclistic, a fictional bike-share company in New York City.
 
-![pexels-fauxels-3184292](https://github.com/user-attachments/assets/b77a7d30-d46f-4e63-92c4-3038a8356af9)
+![pexels-fauxels-3184292](https://github.com/user-attachments/assets/0824110d-2748-4915-a075-b3f827c8c108)
+
 
 
 
