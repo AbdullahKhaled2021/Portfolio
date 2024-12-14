@@ -2,6 +2,9 @@
 
 * The following projects were made as a part of my digital learing joureny.
 
+
+![coursera-logo-full-rgb](https://github.com/user-attachments/assets/9203b1c9-2e89-4aec-99a8-050267e0fdb1)
+
 ## First Project
 
 ### Projcet Title
