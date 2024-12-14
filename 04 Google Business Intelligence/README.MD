@@ -1,7 +1,8 @@
 ### Projcet Title
 Managing a BI project for Cyclistic, a fictional bike-share company in New York City.
 
-![DALL·E 2024-12-14 13 55 29 - A detailed and visually engaging graphic illustration of business intelligence, showcasing interconnected elements such as data visualization charts, ](https://github.com/user-attachments/assets/92afb7fb-3608-4254-8b35-6c31d42b6f92)
+![pexels-fauxels-3184292](https://github.com/user-attachments/assets/b77a7d30-d46f-4e63-92c4-3038a8356af9)
+
 
 
 ### About Projcet
