@@ -31,7 +31,7 @@ When a specific company is slected the dashboard automatically Updates with the 
 
 We used Excel to create financial model that forecasts out the Gross Profit, Operating Profit, or EBIT for two more years using three scenarios.
 
-The forecasting model included a drop-down list for selecting a Strong case, a Base case, and a Weak case. Making the results of the forecast years dynamic. 
+The forecasting model includes 2 drop-down list, One for the company ticker selection and another for selecting a Strong case, a Base case, and a Weak case. Making the results of the forecast years fully dynamic. 
 
 
 
