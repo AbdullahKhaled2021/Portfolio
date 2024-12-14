@@ -1,0 +1,56 @@
+QUERY 1:
+
+SELECT g.genreid, 
+       g.name, 
+       SUM(total) AS Revnue_USD
+FROM genre g
+JOIN track t
+ON t.genreid = g.genreid
+JOIN invoiceline il
+ON il.trackid = t.trackid
+JOIN invoice i
+ON i.invoiceid = il.invoiceid
+GROUP BY 1,2
+ORDER BY 3 DESC
+LIMIT 3;
+
+
+Query 2:
+
+SELECT c.country, 
+       SUM(i.total) Total_Revenue 
+FROM customer c
+JOIN invoice i
+ON i.customerid = c.customerid
+GROUP BY 1
+ORDER BY 2 DESC;
+
+
+Query 3:
+
+WITH t1 AS 
+(SELECT 
+    DATE_TRUNC('Year', i.InvoiceDate) AS Year,
+    SUM(i.Total) AS YearlyRevenue
+FROM Invoice i
+GROUP BY 1
+ORDER BY 1)
+
+SELECT DATE_PART('Year', year) AS Year,
+       YearlyRevenue
+FROM t1;
+
+
+QUERY 4:
+
+SELECT ar.artistid, 
+       ar.name, 
+       COUNT(t.trackid) AS Number_Of_Tracks
+FROM artist ar
+JOIN album al
+ON al.artistid = ar.artistid
+JOIN track t
+ON t.albumid = al.albumid
+GROUP BY 1,2
+ORDER BY 3 DESC
+LIMIT 5;
