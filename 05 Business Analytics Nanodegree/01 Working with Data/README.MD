@@ -7,7 +7,7 @@ Working With Data
 <img width="563" alt="Sample" src="https://github.com/user-attachments/assets/4bcef41a-bb90-42de-902d-370ce33328e5" />
 
 
-`Malaria In Sengal Insight Example`
+                    `Malaria In Sengal Insight Example`
 
 
 
