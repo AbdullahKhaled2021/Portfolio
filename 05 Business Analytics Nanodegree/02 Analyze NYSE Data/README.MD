@@ -35,6 +35,7 @@ The forecasting model included a drop-down list for selecting a Strong case, a B
 
 
 
-<img width="629" alt="PIC2" src="https://github.com/user-attachments/assets/c1ac4128-fcaf-4256-9c8d-4d1efafe402a" />
+<img width="629" alt="PIC21" src="https://github.com/user-attachments/assets/87984872-d6b7-462d-bf7f-38768591d99e" />
+
 <img width="626" alt="PIC3" src="https://github.com/user-attachments/assets/bb257d82-e143-4882-84dd-0b4b6d47f25f" />
 
