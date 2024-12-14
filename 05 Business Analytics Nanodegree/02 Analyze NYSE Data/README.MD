@@ -7,6 +7,11 @@ Analyze NYSE Data
 
 ## About Project 
 
+* In this project analyzed real-life data from the [New York stock exchange dataset](https://www.kaggle.com/datasets/dgawlik/nyse) that contains historical financial data from S&P 500 companies.
+* We used a subset of the original dataset provided by kaggle for this project.
+* This project had 3 parts described in the following paragraphs.
+
+
 ### Part 1
 
 ### Part 2
