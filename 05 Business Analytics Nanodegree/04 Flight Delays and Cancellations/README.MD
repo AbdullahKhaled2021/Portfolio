@@ -1,2 +1,3 @@
 <img width="920" alt="PIC1" src="https://github.com/user-attachments/assets/33c44810-399a-48d7-bbfb-c07be5ed77a1" />
 
+For this portfolio project, I created a series of visualizations to analyze airline delay patterns. A vertical bar chart highlighted the average delay time across various airports, revealing Hawaiian Airlines Inc. as the airline with the highest delays. A map visualization showcased delay patterns geographically, with Falls International Airport standing out for the highest average delay. Lastly, a monthly comparison of delay types showed that late aircraft delays were the most significant, while security-related delays were consistently the lowest.
